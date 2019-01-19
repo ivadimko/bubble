@@ -164,6 +164,9 @@ class Sketch {
     this.time += 0.005;
     this.material.uniforms.uTime.value = this.time;
 
+    this.mesh.rotation.x += 0.01;
+    this.mesh.rotation.y += 0.005;
+    this.mesh.rotation.z += 0.002;
     this.group.quaternion.copy(this.camera.quaternion);
 
 
